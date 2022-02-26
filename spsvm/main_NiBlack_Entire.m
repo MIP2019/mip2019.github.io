@@ -1,6 +1,6 @@
 clear all
 close all
-%% https://blog.csdn.net/carson2005/article/details/14450561?_t=t
+
 
 path='C:\Mafei\Paper\1-SVM-Patch-LaTeX\1-Reply\Experiments\Original_Image\'
 dirFiles=dir(strcat(full(path),'*.tif'))
