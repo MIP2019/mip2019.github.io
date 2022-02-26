@@ -1,5 +1,5 @@
-clear;%清除变量的状态数据
-clc;%清除命令行
+clear;
+clc;
 close all
 % path='C:\Mafei\1-MachineLearning\Mice\MiceEyeDB_50_45_New\'
 % filename='0029 (51).tif'
