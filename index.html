@@ -1,65 +1,519 @@
-﻿<html>
-<head>
-<style type="text/css">
-body
-{
-	font-family: Arial;
-}
-</style>
-</head>
+<!doctype html>
+<html lang="zh-CN">
 
-<body>
-<style type="text/css">
-.mytable{
-width:800px;
-height:100px;
-margin:0 auto;
-border-collapse: collapse;
+  <head>
+    <meta charset="utf-8">
+    <title>我的网页 -医学图像处理：马飞教授团队</title>
+    <link rel="shortcut icon" href="https://htmlpage.cn/favicon.png">
+    <style>
+      @font-face {
+        font-family: Unicons;
+        src: url(fonts/Unicons.woff2) format("woff2"), url(fonts/Unicons.woff) format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block
+      }
 
-}
-</style>
+      @font-face {
+        font-family: Custom;
+        src: url(fonts/Custom.woff2) format("woff2"), url(fonts/Custom.woff) format("woff");
+      }
 
-<table class="mytable" bordercolor="white" border="1">
-  <tr>
-    <th></th>
-    <th><br><br><br><h1 align="center">MIP Lab</h1></th>
-	<td></td>
-  </tr>
-  
-  <tr>
-    <td></td>
-    <td><br><br><br>Welcome to MIP Lab. <br><br><br><br><br></td>
-	<td></td>
-  </tr>
-   <tr>
-    <td></td>
-	<td>
-	 <h3 align="left">CONTACT</h3>
-Address:<br>
-Computer School, Qufu Normal University (Rizhao Campus), Rizhao, Shandong Province, China
-<br>
-Email:<br>
-mafei0603([at])163.com
-		<br> <br>  <img src='captureEye.png' width="600" height="200">
-	</td>
-    <td>
-	  
- 
-</td>
-  </tr>
-   <tr>
-    <td></td>
-	
- 
-    <td><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src='qfnulogo.png' width="500" height="121"><a href="https://clustrmaps.com/site/1bkql"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=kvqPkpSlsjpyfw1ewmZd4pps8zUBVo_beMTOOtLg2UU&cl=ffffff" /></a></td>
- 
-    <td><br><br><br><br> </td> 
-  <td>
-	 
-	</td>
-	</tr>
-</table>
- 
+      .img-mask.mask-1 img {
+        -webkit-mask-image: url(img/blob.svg) !important;
+        mask-image: url(img/blob.svg) !important;
+      }
 
-</body>
-</html>
+      .img-mask.mask-2 img {
+        -webkit-mask-image: url(img/hex.svg) !important;
+        mask-image: url(img/hex.svg) !important;
+      }
+
+      .img-mask.mask-3 img {
+        -webkit-mask-image: url(img/blob2.svg) !important;
+        mask-image: url(img/blob2.svg) !important;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/user-style.css">
+  </head>
+
+  <body>
+
+    <body>
+      <div>
+        <!-- Bootstrap core CSS -->
+        <link href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /><!-- Additional CSS Files -->
+        <link rel="stylesheet" href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/css/fontawesome.css" />
+        <link rel="stylesheet" href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/css/htmlpage-digimedia-v2.css" />
+        <link rel="stylesheet" href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/css/animated.css" />
+        <link rel="stylesheet" href="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/css/owl.css" /><!-- ***** Header Area Start ***** -->
+        <header data-wow-duration="0.75s" data-wow-delay="0s" class="header-area header-sticky wow slideInDown">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <nav class="main-nav">
+                  <!-- ***** Logo Start ***** --><a href="index.html" class="logo"><img src="img/logo-small-svg.svg" alt="医学图像处理" /></a><!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li class="scroll-to-section"><a href="#top" class="active">系统简介</a></li>
+                    <li class="scroll-to-section"><a href="#about">操作方法</a></li>
+                    <li class="scroll-to-section"><a href="#services">技术创新</a></li>
+                    <li class="scroll-to-section"><a href="#portfolio">社会效益</a></li>
+                    <li class="scroll-to-section"><a href="#blog">团队成员</a></li>
+                    <li class="scroll-to-section"><a href="#contact">反馈建议</a></li>
+                    <li class="scroll-to-section">
+                      <div class="border-first-button"><a href="#contact">登录</a></div>
+                    </li>
+                  </ul><a class="menu-trigger"><span>Menu</span></a><!-- ***** Menu End ***** -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header><!-- ***** Header Area End ***** -->
+        <div id="top" data-wow-duration="1s" data-wow-delay="0.5s" class="main-banner wow fadeIn">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6 align-self-center">
+                    <div data-wow-duration="1s" data-wow-delay="1s" class="left-content show-up header-text wow fadeInLeft">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2>视网膜<span id="iic399j" draggable="true" lang="EN-US" class="c65290">OCTA</span><span id="iubdmb" class="c65308">影像视盘视杯分割及青光眼诊断分析系统</span></h2>
+                          <p>Retinal OCTA Image Analysis System for Optic Disc and Cup Segmentation and Glaucoma Diagnosis.</p>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="border-first-button scroll-to-section"><a href="#contact">开始使用</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div data-wow-duration="1s" data-wow-delay="0.5s" class="right-image wow fadeInRight"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/user-upload-images/4576/645.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about" class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div data-wow-duration="1s" data-wow-delay="0.5s" class="about-left-image wow fadeInLeft"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/user-upload-images/4576/octa.jpg" alt="" /></div>
+                  </div>
+                  <div data-wow-duration="1s" data-wow-delay="0.5s" class="col-lg-6 align-self-center wow fadeInRight">
+                    <div class="about-right-content">
+                      <div class="section-heading">
+                        <h6>About OCTA</h6>
+                        <h4>什么是 <font color="#fe664e">OCTA？</font>
+                        </h4>
+                        <div class="line-dec"></div>
+                      </div>
+                      <p>OCTA（光学相干断层扫描血管成像）是一种高分辨率成像技术，用于观察眼部或其他组织的微血管网络。它基于光学相干断层扫描（OCT）技术，通过测量反射光信号的幅度和速度，生成高质量的血管影像，可帮助医生诊断眼部疾病和监测血管病变。</p>
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div data-wow-duration="1s" data-wow-delay="0.5s" class="about-left-image wow fadeInLeft"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/user-upload-images/4576/2020111614594618.jpg" alt="" /></div>
+                  </div>
+                  <div data-wow-duration="1s" data-wow-delay="0.5s" class="col-lg-6 align-self-center wow fadeInRight">
+                    <div class="about-right-content">
+                      <div class="section-heading">
+                        <h6>ABOUT GLAUCOMA DIAGNOSIS</h6>
+                        <h4></h4>
+                        <h4 id="im456s-2" draggable="false" class="gjs-selected">青光眼的危害是什么？</h4>
+                        <div class="line-dec"></div>
+                      </div>
+                      <p>青光眼是一种眼内压升高导致的眼部疾病，可损害视神经，引起视力逐渐丧失。它通常没有明显症状，但如果不及时治疗，可能导致永久性视力损害甚至失明。</p>
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-4">
+                          <div data-wow-duration="1s" data-wow-delay="0s" class="skill-item first-skill-item wow fadeIn">
+                            <div data-percentage="90" class="progress"><span class="progress-left"><span class="progress-bar"></span></span><span class="progress-right"><span class="progress-bar"></span></span>
+                              <div class="progress-value">
+                                <div>
+                                  90%<br /><span>视神经损害</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                          <div data-wow-duration="1s" data-wow-delay="0s" class="skill-item second-skill-item wow fadeIn">
+                            <div data-percentage="80" class="progress"><span class="progress-right"><span class="progress-bar"></span></span><span class="progress-left"><span class="progress-bar"></span></span>
+                              <div class="progress-value">
+                                <div>
+                                  80%<br /><span>视野缩小</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                          <div data-wow-duration="1s" data-wow-delay="0s" class="skill-item third-skill-item wow fadeIn">
+                            <div data-percentage="80" class="progress"><span class="progress-left"><span class="progress-bar"></span></span><span class="progress-right"><span class="progress-bar"></span></span>
+                              <div class="progress-value">
+                                <div>
+                                  80%<br /><span>失明</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="services" class="services section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div data-wow-duration="1s" data-wow-delay="0.5s" class="section-heading wow fadeInDown">
+                  <h6>Project Benefits</h6>
+                  <h4>
+                    <font color="#111010">系统组成</font>
+                  </h4>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="naccs">
+                  <div class="grid">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="menu">
+                          <div class="first-thumb active">
+                            <div class="thumb"><span class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/service-icon-01.png" alt=""/></span>
+                              细粒度特征提取模块
+                            </div>
+                          </div>
+                          <div>
+                            <div class="thumb"><span class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/service-icon-02.png" alt=""/></span>
+                              粗粒度特征提取模块
+                            </div>
+                          </div>
+                          <div>
+                            <div class="thumb"><span class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/service-icon-03.png" alt=""/></span>
+                              多尺度注意力模块
+                            </div>
+                          </div>
+                          <div>
+                            <div class="thumb"><span class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/service-icon-04.png" alt=""/></span>
+                              关系特征模块
+                            </div>
+                          </div>
+                          <div class="last-thumb">
+                            <div class="thumb"><span class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/service-icon-01.png" alt=""/></span>
+                              联合训练模块
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <ul class="nacc">
+                          <li class="active">
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>细粒度特征提取模块</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
+                                        dover lipsum lorem and the others.</p>
+                                      <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span><span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/services-image.jpg" alt="" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>粗粒度特征提取模块</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
+                                        dover lipsum lorem and the others.</p>
+                                      <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span><span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/services-image-02.jpg" alt="" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>多尺度注意力模块</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
+                                        dover lipsum lorem and the others.</p>
+                                      <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span><span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/services-image-03.jpg" alt="" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>关系特征模块</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
+                                        dover lipsum lorem and the others.</p>
+                                      <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span><span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/services-image-04.jpg" alt="" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div>
+                              <div class="thumb">
+                                <div class="row">
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="left-text">
+                                      <h4>Enjoy &amp; Travel</h4>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
+                                        dover lipsum lorem and the others.</p>
+                                      <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span><span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 align-self-center">
+                                    <div class="right-image"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/services-image.jpg" alt="" /></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="free-quote" class="free-quote">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4">
+                <div data-wow-duration="1s" data-wow-delay="0.3s" class="section-heading wow fadeIn">
+                  <h6>Start testing</h6>
+                  <h4>开始检测</h4>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div data-wow-duration="1s" data-wow-delay="0.8s" class="col-lg-8 offset-lg-2 wow fadeIn">
+                <form id="search" action="#" method="GET">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset><input type="web" name="web" placeholder="Your website URL..." autocomplete="on" required class="website" /></fieldset>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset></fieldset>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset><button type="submit" class="main-button">确定</button></fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="blog" class="blog">
+          <div class="container">
+            <div class="row">
+              <div data-wow-duration="1s" data-wow-delay="0.3s" class="col-lg-4 offset-lg-4 wow fadeInDown">
+                <div class="section-heading">
+                  <h6>Project Outcomes:</h6>
+                  <h4>项目成果</h4>
+                  <h4></h4>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div data-wow-duration="1s" data-wow-delay="0.3s" class="col-lg-6 show-up wow fadeInUp">
+                <div class="blog-post">
+                  <div class="thumb"><a href="#"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/blog-post-01.jpg" alt="" /></a></div>
+                  <div class="down-content"><span class="category">最佳案例</span><span class="date">03 August 2021</span><a href="#">
+                      <h4>Lorem Ipsum Dolor Sit Amet, Consectetur Adelore
+                        Eiusmod Tempor Incididunt</h4>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers itii eiumod deis tempor incididunt ut labore.</p><span class="author"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/author-post.jpg" alt=""/>By: Andrea Mentuzi</span>
+                    <div class="border-first-button"><a href="#">了解更多</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-wow-duration="1s" data-wow-delay="0.3s" class="col-lg-6 wow fadeInUp">
+                <div class="blog-posts">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="post-item">
+                        <div class="thumb"><a href="#"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/blog-post-02.jpg" alt="" /></a></div>
+                        <div class="right-content"><span class="category">论文</span><span class="date">24 September 2021</span><a href="#">
+                            <h4> Fei Ma; Shengbo Wang; Cuixia Dai; Fumin Qi; Jing Meng，A new retinal OCT‐angiography diabetic retinopathy dataset for segmentation and DR grading，Journal of Biophotonics（SCI二区），DOI: 10.1002/jbio.202300052，2023.11 </h4>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="post-item">
+                        <div class="thumb"><a href="#"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/blog-post-03.jpg" alt="" /></a></div>
+                        <div class="right-content"><span class="category">发明专利</span><span class="date">24 September 2021</span><a href="#">
+                            <h4>一种基于标签块和像素空间加权的二值化分割方法，马飞;王升波;李颖;孟静;赵景秀;张元科;程荣花，申请(专利)号：CN202211206973.1</h4>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="post-item last-post-item">
+                        <div class="thumb"><a href="#"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/blog-post-04.jpg" alt="" /></a></div>
+                        <div class="right-content"><span class="category">软著</span><span class="date">24 September 2021</span><a href="#">
+                            <h4>(1)	DR图像管理系统，李思恩，王升波，马飞，登记号：2023SR0830643</h4>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contact-us section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div data-wow-duration="1s" data-wow-delay="0.5s" class="section-heading wow fadeIn">
+                  <h6>Contact Us</h6>
+                  <h4>加入我们</h4>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div data-wow-duration="0.5s" data-wow-delay="0.25s" class="col-lg-12 wow fadeInUp">
+                <form id="contact-2" action="" method="post">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="contact-dec"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/contact-dec-v2.png" alt="" /></div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div id="map" class="c62412">
+
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="fill-form">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="info-post">
+                              <div class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/phone-icon.png" alt="" /><a href="#">010-020-0340</a></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="info-post">
+                              <div class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/email-icon.png" alt="" /><a href="#">our@email.com</a></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="info-post">
+                              <div class="icon"><img src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/images/location-icon.png" alt="" /><a href="#">123 Rio de Janeiro</a></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <fieldset><input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required /></fieldset>
+                            <fieldset><input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required /></fieldset>
+                            <fieldset><input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on" /></fieldset>
+                          </div>
+                          <div class="col-lg-6">
+                            <fieldset><textarea name="message" type="text" id="message" placeholder="Message" required class="form-control"></textarea></fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                            <fieldset><button type="submit" id="form-submit" class="main-button">Send Message Now</button></fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>版权所有©曲阜师范大学<br /></p>
+              </div>
+            </div>
+          </div>
+        </footer><!-- Scripts -->
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/vendor/jquery/jquery.min.js"></script>
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/js/owl-carousel.js"></script>
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/js/animation.js"></script>
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/js/imagesloaded.js"></script>
+        <script src="https://template-1253409072.cos.ap-guangzhou.myqcloud.com/html-template/htmlpage_568_digimedia/assets/js/custom.js"></script>
+        <script type="text/javascript" src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=E7Alnx3LcTI1QE3dHSxmlzGXI6RzBUUv"></script>
+        <script type="text/javascript">
+          setTimeout(() => {
+            // GL版命名空间为BMapGL
+            // 按住鼠标右键，修改倾斜角和角度
+            if (window.BMapGL) {
+              var map = new BMapGL.Map("map"); // 创建Map实例
+              map.centerAndZoom(new BMapGL.Point(116.280190, 40.049191), 19); // 初始化地图,设置中心点坐标和地图级别
+              map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+              map.setHeading(64.5);
+              map.setTilt(73);
+            }
+          }, 2000)
+        </script>
+      </div>
+    </body>
+  </body>
+  <html>
