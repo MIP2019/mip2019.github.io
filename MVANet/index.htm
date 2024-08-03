@@ -22,22 +22,29 @@ border-collapse: collapse;
 <table class="mytable" bordercolor="#EEEEE6" border="1">
   <tr>
     <th></th>
-    <th><br> <h2 align="center">基于多视图加权求和融合的工作时长情感分析网络模型Multi-view and weighting addition fusion network（MVANet）</h2></th>
+    <th><br> <h2 align="center">基于多视图加权求和融合的工作时长情感分析网络模型Multi-view and weighting addition fusion network（MWNet）</h2></th>
 	<td></td>
   </tr>
   
   <tr>
     <td></td>
     <td ><br>--------------------------------------------------------------------------------------------------------------------------------------------<br>
-<br>  Multi-view and multi-attention fusion network（MVANet）
+<br>  Multi-view and weighting addition fusion network（MWNet）
 <br>  Permission to use copy, or modify this dataset, tool and codes for educational and research purposes.
 <br>  E-mail : mafei0603@163.com
 <br>  Homepage : https://mip2019.github.io/MVANet
 <br>--------------------------------------------------------------------------------------------------------------------------------------------<br><br> 
+短视频平台上劳动者关于工作时长的情感分析涉及多方面考量。网络主播等职业群体在平台上需进行情感劳动，以吸引观众，这与传统劳动不同。用户评论成为反映劳动者情感倾向的重要渠道，通过文本分析和机器学习算法，可以判断评论的情感正负面。多模态情感分析结合图像、音频和文本，更全面理解用户情感。实践上，研究者利用爬虫获取评论数据，用自然语言处理工具分析情感，深入了解用户对工作时长的看法。这一领域需综合多种技术手段，以准确把握劳动者情感态度，为改善劳动条件提供参考。
+<br> <br> 
 <b>1. Dataset Description </b>
 <br> 
-<p style=text-align:justify; text-justify:inter-ideograph;> 
- Diabetic retinopathy (DR) is one of the major causes of vision loss even blindness in adults suffering from diabetes. With the large number of retina-disease patients, there is a urgent need for automatic recognition of retinal diseases. The wide-field optical coherence tomography angiography (WF-OCTA) is non-invasive imaging technique and convenient to diagnosis diabetic retinopathy. OCTA has the potential efficacy in the analysis of common ophthalmologic diseases, such as the clinical capability of delineating pathology information and obtaining the high-resolution fundus vessel. A new retinal OCT-Angiography diabetic retinopathy dataset(ROAD) is imaged by OCTA. The newly reconstructed ROAD dataset includes 1200 no DR images, 1440 DR images and 1440 ground truth of segmentation for DR images, which is based on DRAC in 2022. The ROAD dataset consists of three grades: no DR, mild non-proliferative diabetic retinopathy (NPDR), and proliferative diabetic retinopathy (PDR). The ground truth of lesion region for DR images in ROAD has also been labeled by professional ophthalmologists. The new DR dataset will be helpful for development of the early detection of DR field and the future researches.
+在自媒体时代，短视频平台如B站成为信息传播和舆论形成的中心。B站用户规模快速增长，以年轻、城市化、高学历的Z世代为主，他们互动性强，忠诚度高，形成了一个充满活力的社区。然而，短视频平台的个性化推送可能形成"信息茧房"，情绪化信息容易影响网民判断，引发舆论危机。这对政府网络舆情治理提出挑战。
+
+为有效预警和引导舆论，本文引入文本情感分析技术，设计了基于加权融合机制的中文文本卷积网络模型。该模型通过分析B站2022-2024年"工作时长"相关短视频的评论区文本，筛选热门主题，分析情感原因，有助于发现舆情焦点。模型的精准情感识别能力，可以预警网民情绪，支持政府有效疏导舆论，促进网络环境的健康发展。
+
+短视频评论中劳动者关于工作时长的情感分析，是一个多维度的研究领域。通过文本分析和机器学习算法，可以深入理解用户的情感倾向，判断评论的正负面。多模态情感分析结合图像、音频和文本，可以更全面地把握用户情感。实践上，通过爬虫技术获取评论数据，利用自然语言处理工具进行情感分析，可以为研究者提供深入的用户情感洞察。
+
+总的来说，短视频评论中的情感分析，需要综合运用文本分析、机器学习、多模态分析等多种技术手段。这不仅可以帮助政府及时预警和有效处理舆论事件，也可以为改善劳动条件、提高工作满意度提供参考。通过精准识别舆情情感倾向，可以更好地引导网络舆论，促进社会和谐稳定。
 
 
 <br>
@@ -58,13 +65,12 @@ border-collapse: collapse;
    <tr>
     <td></td>
 	
-    <td><b>2. Application Tool and code Download </b>
+    <td><b>2. Key Code </b>
 <br><br>
-2.1 <font color="#FF0000">The making ground-truth tool </font> developed by our team can be downloaded with URL：<a href="https://mip2019.github.io/spsvm/MakeGroundTruth_v1.01.zip">MakeGroundtruthTool_v1.01 (windows desktop app at .netframework2.0)</a>.This software is a specialized tool to make the ground truth from original samples under complex scene. The ground-truth images can be obtained by this tool with the help in Fig.2, which is developed by our team. This application is run under <a href="https://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe">.netframework2.0(win-x64)</a> with windows 10 (x86 or x64).
-<br><br>
-2.2 The ground-truth tool developed by our team can be downloaded with URL：<a href="https://mip2019.github.io/spsvm/MakeGroundtruthTool_v1.rar">MakeGroundtruthTool_v1.0 (windows desktop app at .net 5.0)</a>.This software is a specialized tool to make the ground truth from original samples under complex scene. The ground-truth images can be obtained by this tool with the help in Fig.2, which is developed by our team. This application is run under <a href="https://download.visualstudio.microsoft.com/download/pr/0393fb31-b54e-4325-ba45-2b682fd6a43d/90036afbb9671be618554bf8fae3f66f/windowsdesktop-runtime-5.0.11-win-x86.exe">.net 5.0 runtime(win-x86)</a> with windows 10 (x86 or x64).
-<br><br>
-2.3 The key code for PACNet can be downloaded <a href="https://github.com/MIP2019/mip2019.github.io/blob/main/ROAD/PAmodule.zip">here</a> (Pytorch).<br>
+ 
+2.1 评论爬虫代码：<a href="Bili_Crawl_Net.py">here</a> (Python).<br>
+
+2.2 The key code for PACNet can be downloaded <a href="https://github.com/MIP2019/mip2019.github.io/blob/main/ROAD/PAmodule.zip">here</a> (Pytorch).<br>
   
 <br>
 <br>
