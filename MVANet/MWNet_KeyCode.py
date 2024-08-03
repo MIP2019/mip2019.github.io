@@ -17,6 +17,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import numpy as np
 from sklearn import metrics
+import torch.nn.functional as F  
 .
 .
 .
@@ -55,6 +56,7 @@ class MWNet(nn.Module):
         x = self.dropout(x)
         x = self.fc(x)
         x = self.fc2(x)
+        x = F.softmax(x, dim=1)  
         return x
     
  .
